@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="w3-animate-top">
+                <div class="rounded-container">
+                    <h3><strong>Welcome to my Portfolio.</strong></h3>
+                    <h2>Explore my portfolio to witness the fusion of innovation and creativity in every project.</h2>
+                    <button class="button-explore" onclick="scrollToAbout()">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="w3-container w3-center">
+            <div class="about-container">
+                <h3><b>About Me</b></h3>
+                <div class="photo-card">
+                    <img src="img/kad.jpg" alt="Profile Photo">
+                </div>
+                <div class="about-text">
+                    <h2>
+                        <p><b>Muhamad Luqman Hanif bin Ayob</b></p>
+                    </h2>
+                    <p>Hello! I'm Luqman Hanif, a third-year Computer Science, Multimedia Computing student at UiTM Shah Alam, Malaysia, 
+                        specializing in graphic design. My portfolio reflects my dedication to creating visually stunning and 
+                        innovative designs. I'm eager to bring my creativity and skills to your team and learn from new experiences 
+                        during this internship opportunity.</p>
+                    <button class="button-more"><a href="https://www.linkedin.com/in/luqman-hanif-86618a243/">More About Me</a></button>
+                    <p><button class="button-more" onclick="scrollToPortfolio()">My Works</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio"><h3>
+            <p><b>Portfolio</b></h3></p>
+        </div>
+        <div class="portfolio-buttons">
+            <button class="button-portfolio" onclick="showGallery('design-gallery')">Design</button>
+            <button class="button-portfolio" onclick="showGallery('illustration-gallery')">Illustration</button>
+            <button class="button-portfolio" onclick="showGallery('game-gallery')">Game</button>
+            <button class="button-portfolio" onclick="showGallery('animation-gallery')">Animation</button>
+            <button class="button-portfolio" onclick="showGallery('others-gallery')">Others</button>
+        </div>
+        
+        <div class="gallery-container">
+            <div id="design-gallery" class="gallery">
+                <!-- Add your design gallery images here -->
+                <div class="category">
+                    <div class="category-name">Poster</div>
+                    <img src="img/poster1.png" alt="Design 1">
+                    <img src="img/poster2.png" alt="Design 2">
+                    <img src="img/poster3.png" alt="Design 3">
+                    <img src="img/poster4.png" alt="Design 4">
+                </div>
+                <div class="category">
+                    <div class="category-name">Logo</div>
+                    <img src="img/logo1.png" alt="Design 5">
+                    <img src="img/logo2.png" alt="Design 6">
+                    <img src="img/logo3.png" alt="Design 7">
+                    <img src="img/logo4.png" alt="Design 8">
+                </div>
+                <!-- more images -->
+            </div>
+
+            <div id="illustration-gallery" class="gallery">
+                <!-- Add your illustration gallery images here -->
+                <div class="category">
+                    <div class="category-name">Sketch</div>
+                    <img src="img/illust1.png" alt="Illustration 1">
+                    <img src="img/illust2.png" alt="Illustration 2">
+                    <img src="img/illust3.png" alt="Illustration 3">
+                    <img src="img/illust4.png" alt="Illustration 4">
+                </div>
+                <div class="category">
+                    <div class="category-name">Khat</div>
+                    <img src="img/khat1.png" alt="Illustration 5">
+                    <img src="img/khat3.png" alt="Illustration 6">
+                    <img src="img/khat5.png" alt="Illustration 7">
+                    <img src="img/khat6.png" alt="Illustration 8">
+                </div>
+                <!-- more images -->
+            </div>
+            
+            <div id="game-gallery" class="gallery">
+                <!-- Add your game gallery images here -->
+                <img src="img/game1.jpg" alt="Game 1">
+                <img src="img/game2.jpg" alt="Game 2">
+                <!-- more images -->
+            </div>
+            
+            <div id="animation-gallery" class="gallery">
+                <!-- Add your animation gallery images here -->
+                <img src="img/animation1.jpg" alt="Animation 1">
+                <img src="img/animation2.jpg" alt="Animation 2">
+                <!-- more images -->
+            </div>
+            
+            <div id="others-gallery" class="gallery">
+                <!-- Add your other gallery images here -->
+                <img src="img/others1.jpg" alt="Others 1">
+                <img src="img/others2.jpg" alt="Others 2">
+                <!-- more images -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <p><h3>Contact</h3></p>
+        </div>
+        <ul class="contact-list">
+            <li><strong>Email:</strong> luqmanhanif217@gmail.com</li>
+            <li><strong>Phone:</strong> +60 19 810 7678</li>
+            <li><strong>Address:</strong> Seksyen 13, Shah Alam</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 All Right Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

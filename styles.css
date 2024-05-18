@@ -1,0 +1,405 @@
+/* Colors */
+:root {
+    --black: #000000;
+    --dark-gray: #1D1D1D;
+    --dark-red: #770000;
+    --reddish-brown: #580000;
+    --dark-brown: #320100;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--black);
+    color: var(--dark-gray);
+}
+
+header {
+    background: var(--dark-gray);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Montserrat';
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--dark-red);
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background-color: var(--dark-gray);
+    color: white;
+    height: 100vh;
+    background-image: url(img/bg2.png);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.home-container h2 {
+    color: whitesmoke;
+    font-family: 'Montserrat';
+}
+
+.home-container h3 {
+    color: gray;
+    font-family: 'Montserrat';
+}
+
+.rounded-container {
+    background-color: var(--dark-gray);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.button-explore {
+    background-color: var(--dark-red);
+    margin-top: 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-explore:hover {
+    background-color: var(--reddish-brown);
+}
+
+.button-more {
+    background-color: var(--dark-brown);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-more:hover {
+    background-color: var(--reddish-brown);
+}
+
+.button-more a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-more:hover a {
+    color: whitesmoke;
+}
+
+button,
+nav ul li a {
+    transition: all 0.3s ease;
+}
+
+/* Adjust button styles */
+.button-explore,
+.button-more,
+.button-portfolio,
+nav ul li a {
+    transition: all 0.3s ease;
+}
+
+/* Increase button hover effect */
+.button-explore:hover,
+.button-more:hover,
+.button-portfolio:hover,
+nav ul li a:hover {
+    transform: translateY(-3px);
+}
+
+#about {
+    background-color: white;
+    color: black;
+}
+
+
+.about-container h3 {
+    font-family: 'Montserrat';
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.about-text h2 {
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+/* CSS for buttons inside the about section */
+.about .button-more {
+    opacity: 0;
+    transform: translateY(20px); /* Move the button down */
+    transition: opacity 1s ease, transform 5s ease;
+}
+
+/* CSS for buttons inside the portfolio section */
+.portfolio .button-portfolio {
+    opacity: 0;
+    transform: translateY(20px); /* Move the button down */
+    transition: opacity 1s ease, transform 5s ease;
+}
+
+/* CSS to show buttons when their respective section is scrolled into view */
+.about.about-visible .button-more,
+.portfolio.portfolio-visible .button-portfolio {
+    opacity: 1;
+    transform: translateY(0); /* Move the button back to its original position */
+}
+
+.photo-card {
+    margin: 1rem 0;
+    border: 4px solid var(--dark-gray);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#portfolio {
+    background-color: var(--reddish-brown);
+    background-image: url(img/bg.png);
+    color: white;
+    font-family: 'Montserrat';
+    padding: auto;
+}
+
+.portfolio h3{
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Add gap between buttons */
+}
+
+.button-portfolio {
+    background-color: var(--dark-brown);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-portfolio:hover {
+    background-color: var(--black);
+}
+
+.button-portfolio a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.button-portfolio:hover a {
+    color: whitesmoke;
+}
+
+.button-portfolio.active {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.gallery-container {
+    background-color: var(--dark-gray);
+    color: white;
+    border-radius: 20px;
+    padding: 0px;
+    margin: auto;
+    max-width: 60%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.gallery {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.gallery img {
+    max-width: 200px; /* Set maximum width for the images */
+    max-height: 200px; /* Set maximum height for the images */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain; /* Maintain the aspect ratio while filling the container */
+    border-radius: 10px;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 10s ease; /* Add transition for opacity */
+}
+
+/* Active gallery style */
+.gallery.active {
+    display: flex;
+}
+
+/* Fade-in effect */
+.gallery.active img {
+    opacity: 1; /* Change opacity to 1 when the gallery is active */
+}
+
+.category-name {
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+#contact {
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.contact-list li {
+    margin: 0.5rem 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px whitesmoke; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: whitesmoke; 
+}
+
+footer {
+    background: var(--dark-gray);
+    color: var(--dark-red);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 12px;
+}
+
+.animate-top {
+    animation: animateTop 1s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.fadeIn {
+    animation: fadeInAnimation 1s ease;
+    opacity: 1;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .portfolio-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+}
